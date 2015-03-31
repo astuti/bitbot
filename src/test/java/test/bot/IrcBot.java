@@ -4,6 +4,7 @@ import org.pircbotx.PircBotX;
 
 import org.pircbotx.Configuration;
 import org.pircbotx.exception.IrcException;
+import test.bot.commands.AdvancedCommands;
 import test.bot.commands.BotCommands;
 import test.bot.commands.BotSQL;
 import test.bot.events.EventHandler;
@@ -29,6 +30,7 @@ public class IrcBot {
             .addListener(new BotCommands())
             .addListener(new EventHandler())
             .addListener(new BotSQL())
+            .addListener(new AdvancedCommands())
             .buildConfiguration();
 
 
