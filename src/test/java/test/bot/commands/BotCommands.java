@@ -15,15 +15,6 @@ public class BotCommands extends ListenerAdapter<PircBotX>{
     @Override
     public void onMessage(MessageEvent<PircBotX> event) throws Exception {
 
-
-
-                if(event.getMessage().equalsIgnoreCase("!hello")){
-                    if(isVoiced(event.getUser().getNick(), event))
-                    event.getChannel().send().message("Hi  " + event.getUser().getNick()+". Good to hear from you!");
-
-                }
-
-
                 if(event.getMessage().split(" ")[0].equalsIgnoreCase("!welcome")){
                    if( isOperator(event.getUser().getNick(), event) ) {
                        if (event.getMessage().split(" ").length > 1)
