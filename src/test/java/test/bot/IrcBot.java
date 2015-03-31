@@ -12,7 +12,7 @@ import test.bot.events.EventHandler;
 import java.io.IOException;
 
 /**
- * Created by astuti on 29/3/15.
+ * This class configures bot and starts it.
  */
 public class IrcBot {
 

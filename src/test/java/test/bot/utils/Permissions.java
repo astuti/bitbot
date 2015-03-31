@@ -5,7 +5,7 @@ import org.pircbotx.User;
 import org.pircbotx.hooks.events.MessageEvent;
 
 /**
- * Created by astuti on 31/3/15.
+ * Final class with static methods used to check operator and voice persmissions of a user.
  */
 public final class Permissions {
 

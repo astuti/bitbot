@@ -8,7 +8,7 @@ import static test.bot.utils.Permissions.isOperator;
 import static test.bot.utils.Permissions.isVoiced;
 
 /**
- * Created by astuti on 29/3/15.
+ * This class handles command !welcome and !join.
  */
 public class BotCommands extends ListenerAdapter<PircBotX>{
 
@@ -20,7 +20,7 @@ public class BotCommands extends ListenerAdapter<PircBotX>{
                        if (event.getMessage().split(" ").length > 1)
                            event.getChannel().send().message("Welcome " + event.getMessage().split(" ")[1] + " !!!");
                        else
-                           event.getChannel().send().message("please provide an argument.");
+                           event.getChannel().send().message("please provide an argument to '!welcome' command.");
                    }
                 }
 
@@ -28,7 +28,7 @@ public class BotCommands extends ListenerAdapter<PircBotX>{
                      if(event.getMessage().split(" ").length>1)
                          event.getBot().sendIRC().joinChannel(event.getMessage().split(" ")[1]);
                     else
-                         event.getChannel().send().message("provide arg to join command");
+                         event.getChannel().send().message("please provide an argument to '!join' command");
                 }
 
     }

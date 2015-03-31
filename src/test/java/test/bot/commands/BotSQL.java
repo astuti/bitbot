@@ -9,7 +9,7 @@ import java.sql.Statement;
 import java.sql.SQLException;
 
 /**
- * Created by astuti on 30/3/15.
+ * Command !addme adds the user's nick in a database.
  */
 public class BotSQL extends SQLlistener{
 

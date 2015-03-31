@@ -7,9 +7,10 @@ import org.pircbotx.hooks.events.JoinEvent;
 import org.pircbotx.hooks.events.PrivateMessageEvent;
 
 /**
- * Created by astuti on 29/3/15.
+ * Bot responds on joining the channel and on private message.
  */
 public class EventHandler extends ListenerAdapter<PircBotX> {
+
     @Override
     public void onJoin(JoinEvent<PircBotX> event) throws Exception {
         if(!event.getUser().getNick().equalsIgnoreCase(event.getBot().getNick())) {
@@ -22,7 +23,7 @@ public class EventHandler extends ListenerAdapter<PircBotX> {
         System.out.println(event.getChannel());
         event.getBot().sendIRC().joinChannel(event.getChannel());
     }
-
+//sending private messaee "/query user msg"
     @Override
     public void onPrivateMessage(PrivateMessageEvent<PircBotX> event) throws Exception {
         if(event.getMessage().equalsIgnoreCase("hi"))

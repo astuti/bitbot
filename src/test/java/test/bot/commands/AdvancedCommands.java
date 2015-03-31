@@ -6,9 +6,11 @@ import org.pircbotx.hooks.events.MessageEvent;
 
 import java.util.HashMap;
 
+
 /**
- * Created by astuti on 31/3/15.
- */
+* Refractoring commands: This class maintains a list of all commands.
+**/
+
 public class AdvancedCommands extends ListenerAdapter<PircBotX>{
 
     HashMap<String, AdvancedCommandBase> cmd = new HashMap<String, AdvancedCommandBase>();
