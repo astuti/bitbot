@@ -7,7 +7,7 @@ import org.pircbotx.hooks.events.MessageEvent;
 /**
  * Class stores the attributes of an event.To be extended in refactored command classes.
  */
-public class AdvancedCommandBase extends ListenerAdapter<PircBotX>{
+public class RefactoredCommandBase extends ListenerAdapter<PircBotX>{
 
     String message;
     String[] args;

@@ -5,7 +5,7 @@ import org.pircbotx.hooks.events.MessageEvent;
 /**
  *For '?hello' command
  */
-public class AdvancedCommandHello extends AdvancedCommandBase{
+public class RefactoredCommandHello extends RefactoredCommandBase {
     @Override
     public void executeCommand(MessageEvent event) {
         super.executeCommand(event);

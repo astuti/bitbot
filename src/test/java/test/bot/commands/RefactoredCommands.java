@@ -11,13 +11,13 @@ import java.util.HashMap;
 * Refractoring commands: This class maintains a list of all commands.
 **/
 
-public class AdvancedCommands extends ListenerAdapter<PircBotX>{
+public class RefactoredCommands extends ListenerAdapter<PircBotX>{
 
-    HashMap<String, AdvancedCommandBase> cmd = new HashMap<String, AdvancedCommandBase>();
+    HashMap<String, RefactoredCommandBase> cmd = new HashMap<String, RefactoredCommandBase>();
 
-    public AdvancedCommands(){
+    public RefactoredCommands(){
             cmd.clear();
-            cmd.put("hello",new AdvancedCommandHello());
+            cmd.put("hello",new RefactoredCommandHello());
     }
 
     @Override
